@@ -39,6 +39,7 @@
   position: table;
   bottom: 0;
   padding: 3vh;
+  
 }
 
 .noteowner {
@@ -64,7 +65,7 @@
 }
 
 .noteintroduce {
-  padding-top: 10vh;
+  padding-top: 3vh;
   text-align: left;
   padding-left: 10%;
 }

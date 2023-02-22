@@ -16,9 +16,7 @@ function Login(){
           <p>
           <input type="text" className={styles.textbox} placeholder='이메일을 입력해주세요.'></input>
           </p>
-          </form>
           <h2 className={styles.noteintroduce}>비밀번호</h2>
-          <form>
           <p>
           <input type="text" className={styles.textbox} placeholder='비밀번호를 입력해주세요.'></input>
           </p>
