@@ -87,3 +87,29 @@
   background: #ffc800;
   height: 10vh;
 }
+
+@media all and (max-width:1023px) {
+
+  /*모바일, 테블릿 세로*/
+  .half {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+  }
+
+  .threehalf {
+    display: grid;
+    grid-template-columns: 0fr 1fr 0fr;
+  }
+
+  h1 {
+    font-family: "godic";
+    font-size: 600%;
+    margin: 0;
+  }
+
+  h2 {
+    font-family: "godic";
+    font-size: 300%;
+    margin: 0;
+  }
+}
