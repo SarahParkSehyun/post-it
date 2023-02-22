@@ -1,23 +1,26 @@
 import './App.css';
 import React from 'react';
-import styles from "./Home.module.css";
+import styles from "./Login.module.css";
 
-function Home(){
+function Login(){
   return(
     <div className={styles.threehalf}>
       <div className={styles.yellowBackground}></div>
       <div className={styles.right}>
         <div className={styles.top}>
-          <h1 className={styles.h1AfterLogin}>내 노트 만들기</h1>
+          <h1 className={styles.h1AfterLogin}>로그인</h1>
         </div>
         <div className={styles.center}>
-          <h2 className={styles.noteowner}>노트의 주인</h2>
+          <h2 className={styles.noteowner}>이메일</h2>
           <input type="text" className='textbox' maxLength="12"></input>
-          <h2 className={styles.noteintroduce}>노트 소개</h2>
+          <h2 className={styles.noteintroduce}>비밀번호</h2>
           <input type="text" className='textbox' maxLength="30"></input>
         </div>
         <div className={styles.under}>
-          <a href='make_success.html'><input type="submit" className='button' value="노트 만들기"></input></a>
+          <a href='makeNote.html'><input type="submit" className='button' value="로그인"></input></a>
+        </div>
+        <div className={styles.under}>
+          <a href='signup.html'><input type="submit" className='button' value="회원가입"></input></a>
         </div>
       </div>
       <div className={styles.yellowBackground}></div> 
@@ -27,7 +30,7 @@ function Home(){
 
 function App() {
   return (
-    <Home></Home>
+    <Login></Login>
   );
 }
 
