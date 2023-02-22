@@ -12,9 +12,9 @@ function Login(){
         </div>
         <div className={styles.center}>
           <h2 className={styles.noteowner}>이메일</h2>
-          <input type="text" className='textbox' maxLength="12"></input>
+          <input type="text" className='textbox' maxLength="12" placeholder='이메일을 입력해주세요.'></input>
           <h2 className={styles.noteintroduce}>비밀번호</h2>
-          <input type="text" className='textbox' maxLength="30"></input>
+          <input type="text" className='textbox' maxLength="30" placeholder='비밀번호를 입력해주세요.'></input>
         </div>
         <div className={styles.under}>
           <a href='makeNote.html'><input type="submit" className='button' value="로그인"></input></a>
