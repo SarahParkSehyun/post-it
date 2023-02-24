@@ -44,7 +44,8 @@
 .under {
   position: table;
   bottom: 0;
-  padding: 3vh;
+  padding: 2vh;
+  text-align: center;
 
 }
 
