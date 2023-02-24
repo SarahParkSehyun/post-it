@@ -95,7 +95,6 @@ function SignUp(){
   )
 }
 
-function
 
   
 function App() {
