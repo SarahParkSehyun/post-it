@@ -11,17 +11,23 @@
 }
 
 .top {
-  padding: 4vh;
+  padding: 15vh;
   text-align: center;
   width: auto;
-  display: grid;
+  display: block;
+  margin:auto;
   grid-auto-rows: 1fr auto 1fr;
+  
 }
 
 .right {
   display: grid;
   grid-template-rows: auto 1fr auto auto;
   height: 100vh;
+}
+
+.h1{
+  font-size: 300%;
 }
 
 .h1AfterLogin {
@@ -39,6 +45,7 @@
   position: table;
   bottom: 0;
   padding: 3vh;
+
 }
 
 .noteowner {
@@ -50,7 +57,7 @@
 .textbox {
   width: 80%;
   height: 6vh;
-  font-size: 150%;
+  font-size: 120%;
   font-family: "godic";
   border-radius: 10px;
   transition: 1s;
@@ -64,7 +71,7 @@
 }
 
 .noteintroduce {
-  padding-top: 10vh;
+  padding-top: 3vh;
   text-align: left;
   padding-left: 10%;
 }
@@ -112,4 +119,7 @@
     font-size: 300%;
     margin: 0;
   }
+}
+.image{
+  text-align: center;
 }

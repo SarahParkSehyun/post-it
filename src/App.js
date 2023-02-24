@@ -1,8 +1,37 @@
 import './App.css';
 import React from 'react';
 import styles from "./Login.module.css";
+import homestyles from "./Home.module.css"
 
+function Home(){
+  return(
+    <div className={homestyles.threehalf}>
+      <div className={homestyles.yellowBackground}></div>
+      <div className={homestyles.right}>
+        <div className={homestyles.top}>
+          <img src="img/post_it.png" height="200px" width="200px" />
+          <h1 className={homestyles.h1}>Post - it</h1>
+        </div>
+        <div className={homestyles.center}>
+        </div>
+        <div className={homestyles.under}>
+          <a href='makeNote.html'><input type="submit" className={homestyles.button} value="로그인"></input></a>
+        </div>
+        <div className={homestyles.under}>
+          <a href='signUp.html'><input type="submit" className={homestyles.button} value="회원가입" ></input></a>
+          <a href='소개.html'>개발자 소개</a>
+        </div>
+
+      </div>
+      <div className={homestyles.yellowBackground}></div> 
+    </div>
+  )
+}
 function Login(){
+  function handleClick(e){
+    window.location.replace("/next")
+  }
+
   return(
     <div className={styles.threehalf}>
       <div className={styles.yellowBackground}></div>
@@ -26,7 +55,7 @@ function Login(){
           <a href='makeNote.html'><input type="submit" className={styles.button} value="로그인"></input></a>
         </div>
         <div className={styles.under}>
-          <a href='signup.html'><input type="submit" className={styles.button} value="회원가입"></input></a>
+          <a href='signUp.html'><input type="submit" className={styles.button} value="회원가입" ></input></a>
         </div>
       </div>
       <div className={styles.yellowBackground}></div> 
@@ -34,9 +63,10 @@ function Login(){
   )
 }
 
+  
 function App() {
   return (
-    <Login></Login>
+    <Home></Home>
   );
 }
 
